@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-sun"></i> Sunrise Sunset Dashboard</h1>
+        <p>Select a location to view sunrise and sunset times.</p>
+    </header>
+    <main>
+        <section id="location-selector">
+            <label for="location-select">Choose a Location:</label>
+            <select id="location-select">
+                <option value="">-- Select a Location --</option>
+                <option value="40.71427,-74.00597">New York City, NY</option>
+                <option value="41.8781,-87.6298">Chicago, IL</option>
+                <option value="34.0522,-118.2437">Los Angeles, CA</option>
+                <option value="25.7617,-80.1918">Miami, FL</option>
+                <option value="47.6062,-122.3321">Seattle, WA</option>
+                <option value="39.7392,-104.9903">Denver, CO</option>
+                <option value="42.3601,-71.0589">Boston, MA</option>
+                <option value="30.2672,-97.7431">Austin, TX</option>
+                <option value="37.7749,-122.4194">San Francisco, CA</option>
+                <option value="33.4484,-112.0740">Phoenix, AZ</option>
+                <option value="35.6762,139.6503">Tokyo, Japan</option>
+                <option value="51.5074,-0.1278">London, UK</option>
+            </select>
+        </section>
+        <section id="dashboard">
+            <div id="error-message" class="hidden">Error loading data. Please try again.</div>
+            <div class="day-section" id="today-section">
+                <h2><i class="fas fa-calendar-day"></i> Today</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <i class="fas fa-sunrise"></i>
+                        <span class="label">Sunrise:</span>
+                        <span class="value" id="today-sunrise">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-sunset"></i>
+                        <span class="label">Sunset:</span>
+                        <span class="value" id="today-sunset">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-dawn"></i>
+                        <span class="label">Dawn:</span>
+                        <span class="value" id="today-dawn">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-dusk"></i>
+                        <span class="label">Dusk:</span>
+                        <span class="value" id="today-dusk">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-clock"></i>
+                        <span class="label">Solar Noon:</span>
+                        <span class="value" id="today-solar-noon">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-hourglass-half"></i>
+                        <span class="label">Day Length:</span>
+                        <span class="value" id="today-day-length">--</span>
+                    </div>
+                </div>
+            </div>
+            <div class="day-section" id="tomorrow-section">
+                <h2><i class="fas fa-calendar-alt"></i> Tomorrow</h2>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <i class="fas fa-sunrise"></i>
+                        <span class="label">Sunrise:</span>
+                        <span class="value" id="tomorrow-sunrise">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-sunset"></i>
+                        <span class="label">Sunset:</span>
+                        <span class="value" id="tomorrow-sunset">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-dawn"></i>
+                        <span class="label">Dawn:</span>
+                        <span class="value" id="tomorrow-dawn">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-dusk"></i>
+                        <span class="label">Dusk:</span>
+                        <span class="value" id="tomorrow-dusk">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-clock"></i>
+                        <span class="label">Solar Noon:</span>
+                        <span class="value" id="tomorrow-solar-noon">--</span>
+                    </div>
+                    <div class="data-item">
+                        <i class="fas fa-hourglass-half"></i>
+                        <span class="label">Day Length:</span>
+                        <span class="value" id="tomorrow-day-length">--</span>
+                    </div>
+                </div>
+            </div>
+            <div id="timezone-info">
+                <i class="fas fa-globe"></i>
+                <span class="label">Timezone:</span>
+                <span class="value" id="timezone">--</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href="https://sunrisesunset.io/" target="_blank">SunriseSunset.io</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">index.html
